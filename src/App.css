@@ -1,0 +1,223 @@
+.App {
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-header {
+  background-color: #4A5B5B;
+  height: 60px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.App-title {
+  font-size: 1.5em;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.btn {
+  width: 30%;
+  background-color: #4A5B5B;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #657676;
+}
+
+.btn-sm-complete {
+  width: 5%;
+  background-color: limegreen;
+  color: white;
+  padding: 4px 4px;
+  margin-left: 5px;
+  margin-right: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.btn-sm-delete {
+  width: 5%;
+  background-color: #fa8072;
+  color: white;
+  padding: 4px 4px;
+  margin-left: 5px;
+  margin-right: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.divider{
+  width:1px;
+  height:auto;
+  display:inline-block;
+}
+
+.li {
+  height: 30px;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border-color: #4A5B5B;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=date], date {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border-color: #4A5B5B;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4A5B5B;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #838B8B;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+ol {
+  counter-reset: li; /* Initiate a counter */
+  list-style: none; /* Remove default numbering */
+  *list-style: decimal; /* Keep using default numbering for IE6/7 */
+  font: 15px 'trebuchet MS', 'lucida sans';
+  padding: 0;
+  margin-bottom: 4em;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+ol ol {
+  margin: 0 0 0 2em; /* Add some left margin for inner lists */
+}
+
+.rectangle-list a{
+  position: relative;
+  display: block;
+  padding: .4em .4em .4em .8em;
+  margin: .5em 0 .5em 2.5em;
+  background: #727D7D;
+  color: white;
+  text-decoration: none;
+  transition: all .3s ease-out;
+  border-radius: 4px;   
+}
+
+.rectangle-list a:hover{
+  background: #667575;
+}   
+
+.rectangle-list a:before{
+  content: counter(li);
+  counter-increment: li;
+  position: absolute; 
+  left: -2.5em;
+  top: 50%;
+  margin-top: -1em;
+  background:  #fa8072;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.btn-footer  {
+  margin-left: 2px;
+  margin-right: 2px;
+  width: 32.4%;
+}
+
+.rectangle-list a:after{
+  position: absolute; 
+  content: '';
+  border: .5em solid transparent;
+  left: -1em;
+  top: 50%;
+  margin-top: -.5em;
+  transition: all .3s ease-out;               
+}
+
+.rectangle-list a:hover:after{
+  left: -.5em;
+  border-left-color: #fa8072;             
+}   
+
+.center {
+  margin: auto;
+  width: 40%;
+  padding: 10px;
+}
+
+select {
+  width:100%;
+  border: 1px solid #bbb;
+  padding:.75em 1em .5em 1em;
+  box-shadow: 0 2px 1px 0 rgba(0,0,0,0.2);
+  background-color:white;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 40px;
+  border-color: #4A5B5B;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+select:hover {
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
+}
